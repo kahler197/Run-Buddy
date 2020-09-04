@@ -22,7 +22,7 @@
 
             <li>
                 <!--Anchor element-->
-                <a href="#what-we-d0">What We Do</a>
+                <a href="#what-we-do">What We Do</a>
             </li>
             <li>
                 <a href="#what-you-do">What You do</a>
@@ -49,10 +49,12 @@
             <form>
                  <label for="name">Ener full name:</label>
                  <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
+                 
                  <label for="email">Enter email address:</label>
                  <input type="text" placeholder="Email Address" name="email" id="email" class="form-input"/>
+                 
                  <label for="phone"> Enter a telephone number:</label>
-                 <input type="text" placeholder="Phone Number" name="phone" id="phone" class="form=input"/>
+                 <input type="text" placeholder="Phone Number" name="phone" id="phone" class="form-input"/>
                  <p>
                  Have you worked out with a trainer before?
                  <input type="radio" name="trainer-confirm" id="trainer-yes"/>
@@ -62,7 +64,8 @@
                  </p>
 
                  <p>
-                 <label for="checkbox"> I acknowledge that I am at least 18 years of age.</label>
+                 <label for="checkbox"> I acknowledge that I am at least 18 years of age.
+                 </label>
                  <input type="checkbox" name="age-confirm" id="checkbox" />
                  </p>
 
@@ -78,46 +81,81 @@
 
     <!--"What We Do-->
 
-    <section id="what-we-do">
-        <h2>What We Do</h2>
+    <section id="what-we-do" class="intro">
+        <h2 class="secction-title primary-border">What We Do</h2>
         <p> buthcer selfies chambray shabby chic gentrify readmade yr Echo Park XOX</p>
     </section>
 
     <!--"What You Do"--> 
 
-    <section id="what-you-do">
-        <h2>What You do</h2>
-
+    <section id="what-you-do" class="steps">
+        <h2 class="section-title secondary-border">What You do</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <div>
             <!-- insert img element-->
             <img src="./assets/images/step-1.svg" alt="" />
-            <h3>Step 1: Fill Out the Form Above</h3>
+            <h3>Step 1: <span>Fill Out the Form Above.</span></h3>
             <p>You're already here, so why not?</p>
         </div>
 
         <div>
             <img src="./assets/images/step-2.svg" alt="" />
-            <h3> Step 2: Consult with One of Our Trainers.</h3>
+            <h3> Step 2: <span>Consult with One of Our Trainers.</span></h3>
             <p>Are you here to build muscle, lose weight, or just feel good?</p>
         </div>
 
         <div>
             <img src="./assets/images/step-3.svg" />
-            <h3>Step 3: Get Running</h3>
+            <h3>Step 3: <span>Get Running.</span></h3>
             <p>Hit the ground running (literally) once your trainer lays out your plan</p>
         </div>
 
         <div>
             <img src="./assets/images/step-4.svg" alt="" />
-            <h3>Step 4: See Results.</h3>
+            <h3>Step 4: <span>See Results.</span></h3>
             <p>Bi-weekly checkins with your trainer will keep you focused</p>
         </div>
     </section>
 
     <!--"Meet The Trainers"-->
 
-    <section>
-        <h2>Meet The Trainers</h2>
+    <section id="your-trainers" class="trainers">
+        <h2 class="section-title primary-border">
+            Meet the Trainers
+        </h2>
+
+        <!--first trainer bio-->
+        <article class="trainer">
+            <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron" />
+            <div class="trainer-bio text-left">
+                <h3>Arron Stephens</h3>
+                <h4>Speed / Strength</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
+      itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+                </p>
+            </div>
+        </article>
+
+        <article class="trainer">
+            <div class="trainer-bio text-right">
+                <h3>Joanna Gill</h3>
+                <h4>Endurance</h4>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout" />
+        </article>
+
+        <!--third trainer bio-->
+
+        <article class="trainer">
+            <img src="./assets/images/trainer-3.jpg" alt="Harry Smith Wearing a headband and lifting comically small pink weights" />
+            <div class="trainer-bio text-left">
+                <h3>Harry "the Headband" Smith</h3>
+                <h4>Strength</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </article>
     </section>
 
     <!--"Reach Out-->
