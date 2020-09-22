@@ -8,6 +8,8 @@ body {
 
 header {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 20px 35px;
     background-color: #39a6b2;
   }
