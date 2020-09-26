@@ -4,6 +4,7 @@
   header {
     padding-bottom: 0;
     justify-content: center;
+    position: relative;
   }
 
   header h1 {
@@ -142,15 +143,25 @@ header {
     justify-content: space-between;
     padding: 20px 35px;
     background-color: #39a6b2;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
   }
 
-  h1 {
-    font-weight: bold;
-    font-size: 36px;
-    color: #fce138;
-    margin: 0;
+  header h1 {
+    /* add alongside your existing declartions */
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      font-weight: bold;
+      margin: 0;
+      font-size: 36px;
+      color: #fce138;
   }
-  
+
   header a {
     text-decoration: none;
     color: #fce138;
@@ -159,6 +170,7 @@ header {
   header nav {
       margin: 7px 0;
   }
+
   header nav ul  {
     display: flex;
     flex-wrap: wrap;
@@ -168,19 +180,15 @@ header {
   }
 
   header nav ul li a {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       padding: 10px 15px;
       font-weight: lighter;
       font-size: 1.55vw;
+      background: #fce138;
+      color: #024e76;
+      border-radius: 15px;
+      text-shadow: none;
   }
-
-  header h1 {
-      font-weight: bold;
-      margin: 0;
-      font-size: 36px;
-      color: #fce138;
-  }
-
-
 
   footer {
       display: flex;
@@ -192,17 +200,16 @@ header {
   }
 
   footer h2 {
-      
       color: #024e76;
       font-size: 30px;
       margin: 0;
   }
 
   footer div {
-      
       line-height: 1.5;
       text-align: right;
   }
+  
   footer a {
       color: #024e76
   }
@@ -226,18 +233,10 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     color: #fff;
+    background-attachment: fixed;
+    background-position: 80%;
    
   }
-
-  .hero-form {
-    border: 3px solid #024e76;
-    background-color: #fce138;
-    padding: 20px;
-    color: #024e76;
-    border: solid 3px #024e76;
-    width: 40%;
-    margin: 3.5%;
-     }
 
   .hero-cta {
     width: 35%;
@@ -249,10 +248,22 @@ header {
   }
 
   .hero-cta h2 {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-style: italic;
     font-size: 55px;
     color: #fce138;
   }
+
+  .hero-form {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 3px solid #024e76;
+    border-radius: 15px;
+    background-color: rgba(252, 252, 56, 0.8);
+    padding: 20px;
+    color: #024e76;
+    width: 40%;
+    margin: 3.5%;
+     }
 
   .hero-form h3 {
     font-size: 24px;
@@ -265,12 +276,19 @@ header {
 
   .form-input {
       border: 1px solid #024e76;
+      border-radius: 10px;
       display: block;
       padding: 7px 15px;
       font-size: 16px;
       color: #024e76;
       width: 100%;
       margin-bottom: 15px;
+      background-color: rgba(255, 255, 255, 0.75);
+  }
+
+  .form-input:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
   }
 
   .hero-form label {
@@ -279,10 +297,15 @@ header {
 
   .hero-form button {
       border: none;
+      border-radius: 10px;
       padding: 10px 20px;
       font-size: 16px;
       color: #fce138;
       background-color: #024e76;
+  }
+
+  .hero-form button:hover {
+    background-color: #39a6b2;
   }
 
 /* Hero Style End */
@@ -302,16 +325,24 @@ header {
   text-align: center;
 }
 
+.steps {
+  text-align: center;
+}
+
 .step {
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
-  border-bottom: 1px solid #39a6b2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   background: #fce138;
+  border-bottom: 1px solid #39a6b2;
+}
+
+.step:last-child {
+  border-bottom: none;
 }
 
 .step-info {
@@ -410,7 +441,7 @@ header {
 }
 
 .trainer {
-  overflow:auto;
+  overflow: auto;
 }
 
 .text-left {
@@ -483,14 +514,17 @@ header {
   grid-column: 1;
   grid-row: 1/ -1;
   transform: rotate(180deg);
-  }
+}
 
-  .grid-head, .grid-price, .service-grid-item.cancel {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
+.grid-head, .grid-price, .service-grid-item.cancel {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* SERVICE STYLES END */
 
 /* REACH OUT STYLES START */
+
 .contact {
    background: #024e76
 }
@@ -539,6 +573,7 @@ header {
 
 .contact-form input {
   border: 1px solid #024e76;
+  border-radius: 10px;
   display: block;
   padding: 7px 15px;
   font-size: 16px;
@@ -549,7 +584,9 @@ header {
 }
 
 .contact-form textarea {
+  background-color: rgba(255,255,255, 0.75);
   border: 1px solid #024e76;
+  border-radius: 10px;
   display: block;
   padding: 7px 15px;
   font-size: 16px;
@@ -562,10 +599,26 @@ header {
 .contact-form button {
   width: 100%;
   border: none;
+  border-radius: 10px;
+  border-radius: 10px;
   background: #fce138;
   color: #024e76;
   text-align: center;
   padding: 15 px 0;
   font-size: 16px;
-/* REACH OUT STYLES END */
+}
 
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
+}
+
+.contact-form input:focus {
+  outline: none;
+}
+
+.contact-from textarea:focus {
+  background-color: rgba(255,255,255, 0.75);
+  outline: none;
+}
+/* REACH OUT STYLES END */
